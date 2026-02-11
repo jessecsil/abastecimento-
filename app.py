@@ -10,7 +10,7 @@ st.title("⛽ Abastecimento 2026")
 conn = st.connection("gsheets", type=GSheetsConnection)
 
 # Lendo os dados existentes
-df = conn.read(worksheet="Fevereiro", ttl="0")
+df = conn.read(ttl="0")
 
 # Interface de entrada
 with st.form(key="abastecimento_form"):
